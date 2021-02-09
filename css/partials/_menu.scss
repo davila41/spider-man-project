@@ -72,6 +72,17 @@ header{
         }
     }
 }
+.bx{
+    display: none;
+    @include responsive{
+        width: 48px;
+        height: 48px;
+        display: block;
+
+        background-color: $white-light;
+        border-radius: 8px;
+    }
+}
 .nav-social{
     display: flex;
     svg{

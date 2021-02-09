@@ -13,6 +13,7 @@
 
     @include responsive(){
         flex-direction: column;
+        height: auto;
 
     }
 }
@@ -41,6 +42,11 @@
 .spiderman{
     width: 150%;
     transform: translate3d(-170px,0,0);
+
+    @include responsive(){
+        width: 100%;
+        transform: translate3d(0,0,0);
+    }
 }
 
 .btn{
