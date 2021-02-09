@@ -48,6 +48,7 @@ p {
       -ms-flex-align: center;
           align-items: center;
   height: 85vh;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 960px) {
@@ -57,6 +58,7 @@ p {
         -ms-flex-direction: column;
             flex-direction: column;
     height: auto;
+    overflow: none;
   }
 }
 
