@@ -17,6 +17,7 @@ header{
     display: flex;
     justify-content: flex-start;
     align-items: center;
+
 }
 
 .nav-list{
@@ -26,7 +27,9 @@ header{
     
     li{
         margin-left: 24px;
-
+        @include responsive(){
+            display: none;
+        }
     }
 }
 .logo{
@@ -86,5 +89,9 @@ header{
             }
 
         } 
+    }
+
+    @include responsive(){
+        display: none;
     }
 }
