@@ -10,12 +10,12 @@
     flex-direction: row;
     align-items: center;
     height: 85vh;
-    overflow: hidden;
+    overflow: none;
 
     @include responsive(){
         flex-direction: column;
         height: auto;
-        overflow: none;
+        overflow: hidden;
 
     }
 }
@@ -151,3 +151,33 @@
     }
 }
 
+
+.bg-video{
+    top: 0;
+    left: 0;
+    position: absolute;
+
+    z-index: -1;
+    overflow: hidden;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    &::after{
+        content: '';
+        width: 100%;
+        height: 100%;
+        
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+
+        background: linear-gradient(90deg, #0B0C10 24.48%, rgba(11, 12, 16, 0.8) 54.09%, #0C0C10 77.6%);
+
+    }
+}
